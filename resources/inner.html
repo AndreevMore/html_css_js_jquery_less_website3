@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable:no"/>
+    <title>Inner</title>
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+<div id="container" class="clearfix">
+    <input type="checkbox" id="nav-collapse">
+    <main>
+        <!-- About me section -->
+        <section id="about-me-section">
+            <header><h3>About me</h3></header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab a corporis ex quia excepturi blanditiis
+                maiores aut, omnis autem labore ratione hic ullam iusto praesentium laudantium, iste ducimus. Doloribus,
+                ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eligendi consequuntur, facilis
+                quas beatae sed quidem repellendus reprehenderit obcaecati nemo, debitis vitae minus alias, placeat
+                accusamus est ut provident magnam.</p>
+        </section>
+        <!-- -Education section -->
+        <section id="education-section">
+            <header><h3>Education</h3></header>
+            <div class="edu-container">
+                <ul class="clearfix"></ul>
+                <div class="mask fadeout">
+                    <div class="spinner">
+                        <i class="fa fa-refresh fa-spin"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Experience section -->
+        <section id="experience-section">
+            <header><h3>Experience</h3></header>
+            <ul class="clearfix">
+                <li class="clearfix">
+                    <aside>
+                        <h4>Google</h4>
+                        <span>2014-2014</span>
+                    </aside>
+                    <article>
+                        <h4>Back-end developer / java programmer</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, perferendis. Quos quaerat
+                            deleniti voluptatem, est incidunt aperiam voluptatibus earum suscipit quae asperiores eum,
+                            non enim! Saepe assumenda distinctio placeat doloremque.</p>
+                    </article>
+                </li>
+                <li class="clearfix">
+                    <aside>
+                        <h4>Twitter</h4>
+                        <span>2012</span>
+                    </aside>
+                    <article>
+                        <h4>Web Developer</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, labore. Repellendus
+                            tempora eum beatae repellat praesentium enim quo laceat, quia blanditiis maxime incidunt
+                            cupiditate quam minima, doloremque quasi tempore officia.</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <!-- -Skills section -->
+        <section id="skills-section">
+            <header>
+                <h3>Skills</h3>
+                <div class="open-edit-btn default-btn">
+                    <i class="fa fa-pencil-square-o"></i>
+                    <span>Open/Edit</span>
+                </div>
+            </header>
+            <form action="#">
+                <fieldset>
+                    <div>
+                        <label for="skill-name">Skill name:</label>
+                        <input type="text" pattern=".{1,100}" required name="skill-name" id="skill-name" placeholder="Enter skill name"/>
+                    </div>
+                    <div>
+                        <label for="skill-range">Skill range:</label>
+                        <input type="number" required name="skill-range" id="skill-range" placeholder="Enter skill range" min="10" max="100">
+                    </div>
+                    <div>
+                        <input class="default-btn" type="submit" value="Add skill"/>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="skills-container clearfix">
+                <div data-skill="html">HTML</div>
+                <div data-skill="css">CSS</div>
+                <div data-skill="jquery">jQuery</div>
+                <div data-skill="php">PHP</div>
+                <div data-skill="laravel">Laravel 2 (framework)</div>
+            </div>
+            <div class="metrics-container">
+                <div class="metric beginner">Beginner</div>
+                <div class="metric proficient proficient-xpos">Proficient</div>
+                <div class="metric expert expert-xpos">Expert</div>
+                <div class="metric master">Master</div>
+            </div>
+        </section>
+        <!-- -Portfolio section -->
+        <section id="portfolio-section">
+            <header><h3>Portfolio</h3></header>
+            <ul class="portfolio-filter clearfix">
+                <li><a href="#" data-filter="*" class="active" >All </a>/</li>
+                <li><a href="#" data-filter=".code">Code </a>/</li>
+                <li><a href="#" data-filter=".ui">UI</a></li>
+            </ul>
+            <div class="portfolio-container clearfix">
+                <div class="portfolio-item code">
+                    <img src="images/1.jpg" alt="">
+                    <div class="hover-info">
+                        <h3>Some text</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, at dignissimos commodi aut,
+                            magnam nisi?</p>
+                        <a href="#">
+                            <i class="fa fa-link" aria-hidden="true"></i>
+                            <span>View resource</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-item ui">
+                    <img src="images/2.jpg" alt="">
+                    <div class="hover-info">
+                        <h3>Some text</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, at dignissimos commodi aut,
+                            magnam nisi?</p>
+                        <a href="#">
+                            <i class="fa fa-link" aria-hidden="true"></i>
+                            <span>View resource</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-item ui">
+                    <img src="images/2.jpg" alt="">
+                    <div class="hover-info">
+                        <h3>Some text</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, at dignissimos commodi aut,
+                            magnam nisi?</p>
+                        <a href="#">
+                            <i class="fa fa-link" aria-hidden="true"></i>
+                            <span>View resource</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-item code">
+                    <img src="images/1.jpg" alt="">
+                    <div class="hover-info">
+                        <h3>Some text</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, at dignissimos commodi aut,
+                            magnam nisi?</p>
+                        <a href="#">
+                            <i class="fa fa-link" aria-hidden="true"></i>
+                            <span>View resource</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-item code">
+                    <img src="images/1.jpg" alt="">
+                    <div class="hover-info">
+                        <h3>Some text</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, at dignissimos commodi aut,
+                            magnam nisi?</p>
+                        <a href="#">
+                            <i class="fa fa-link" aria-hidden="true"></i>
+                            <span>View resource</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-item ui">
+                    <img src="images/2.jpg" alt="">
+                    <div class="hover-info">
+                        <h3>Some text</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, at dignissimos commodi aut,
+                            magnam nisi?</p>
+                        <a href="#">
+                            <i class="fa fa-link" aria-hidden="true"></i>
+                            <span>View resource</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contacts section -->
+        <section id="contacts-section">
+            <header><h3>Contacts</h3></header>
+            <div class="number-container">
+                <div class="contacts-icon">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                </div>
+                <div class="contacts-info">
+                    <h4>
+                        <a href="tel:500345242">500345242</a>
+                    </h4>
+                </div>
+            </div>
+            <div class="mail-container">
+                <div class="contacts-icon">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </div>
+                <div class="contacts-info">
+                    <h4>
+                        <a href="mailto:office@kamsolutions.pl">office@kamsolutions.pl</a>
+                    </h4>
+                </div>
+            </div>
+            <div class="tw-heading">
+                <div class="contacts-icon">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </div>
+                <div class="contacts-info">
+                    <h4>Twitter</h4>
+                    <a class="contact-link" href='https://twitter.com/wordPress'>https://twitter.com/wordPress</a>
+                </div>
+            </div>
+            <div class="fb-heading">
+                <div class="contacts-icon">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </div>
+                <div class="contacts-info">
+                    <h4>Facebook</h4>
+                    <a class="contact-link"
+                       href='https://www.facebook.com/facebook'>https://www.facebook.com/facebook</a>
+                </div>
+            </div>
+            <div class="skype-heading">
+                <div class="contacts-icon">
+                    <i class="fa fa-skype" aria-hidden="true"></i>
+                </div>
+                <div class="contacts-info">
+                    <h4>Skype</h4>
+                    <a class="contact-link" href='skype:kamsolutions.pl?call'>kamsolutions.pl</a>
+                </div>
+            </div>
+        </section>
+        <!-- Feefbacks section -->
+        <section id="feedbacks-section">
+            <header><h3>Feedbacks</h3></header>
+            <ul>
+                <li>
+                    <article class="clearfix">
+                        <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti natus error impedit
+                            assumenda nulla suscipit qui veritatis unde inventore esse dignissimos architecto
+                            repellendus, veniam quasi quibusdam vel ut excepturi laudantium.</q>
+                        <div class="feedback-author clearfix">
+                            <img src="images/feedback-photo.gif" alt="photo"/>
+                            <address>
+                                <em>Martin Friman Programmer,</em>
+                                <a href="somesite.com">somesite.com</a>
+                            </address>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="clearfix">
+                        <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti natus error impedit
+                            assumenda nulla suscipit qui veritatis unde inventore esse dignissimos architecto
+                            repellendus, veniam quasi quibusdam vel ut excepturi laudantium.</q>
+                        <div class="feedback-author clearfix">
+                            <img src="images/feedback-photo.gif" alt="photo"/>
+                            <address>
+                                <em>Martin Friman Programmer,</em>
+                                <a href="somesite.com">somesite.com</a>
+                            </address>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="clearfix">
+                        <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti natus error impedit
+                            assumenda nulla suscipit qui veritatis unde inventore esse dignissimos architecto
+                            repellendus, veniam quasi quibusdam vel ut excepturi laudantium.</q>
+                        <div class="feedback-author clearfix">
+                            <img src="images/feedback-photo.gif" alt="photo"/>
+                            <address>
+                                <em>Martin Friman Programmer,</em>
+                                <a href="somesite.com">somesite.com</a>
+                            </address>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="clearfix">
+                        <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti natus error impedit
+                            assumenda nulla suscipit qui veritatis unde inventore esse dignissimos architecto
+                            repellendus, veniam quasi quibusdam vel ut excepturi laudantium.</q>
+                        <div class="feedback-author clearfix">
+                            <img src="images/feedback-photo.gif" alt="photo"/>
+                            <address>
+                                <em>Martin Friman Programmer,</em>
+                                <a href="somesite.com">somesite.com</a>
+                            </address>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="clearfix">
+                        <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti natus error impedit
+                            assumenda nulla suscipit qui veritatis unde inventore esse dignissimos architecto
+                            repellendus, veniam quasi quibusdam vel ut excepturi laudantium.</q>
+                        <div class="feedback-author clearfix">
+                            <img src="images/feedback-photo.gif" alt="photo"/>
+                            <address>
+                                <em>Martin Friman Programmer,</em>
+                                <a href="somesite.com">somesite.com</a>
+                            </address>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <div>
+            <span class="default-btn go-top-btn"><i class="fa fa-chevron-up" aria-hidden="true"></i></span>
+        </div>
+    </main>
+    <!-- Navigation bar -->
+    <nav>
+        <header>
+            <label for="nav-collapse" class="hamburger-btn"></label>
+            <figure>
+                <img src="images/photo.jpg" alt="photo">
+                <figcaption><h4 class="nav-text">Andrii</h4></figcaption>
+            </figure>
+        </header>
+        <ul class="side-bar">
+            <li>
+                <a class="active" href="#about-me-section">
+                    <i class="fa fa-user fa-lg"></i>
+                    <span class="nav-text">About me</span>
+                </a>
+            </li>
+            <li>
+                <a href="#education-section">
+                    <i class="fa fa-graduation-cap fa-lg"></i>
+                    <span class="nav-text">Education</span>
+                </a>
+            </li>
+            <li>
+                <a href="#experience-section">
+                    <i class="fa fa-pencil fa-lg"></i>
+                    <span class="nav-text">Experience</span>
+                </a>
+            </li>
+            <li>
+                <a href="#skills-section">
+                    <i class="fa fa-diamond fa-lg"></i>
+                    <span class="nav-text">Skills</span>
+                </a>
+            </li>
+            <li>
+                <a href="#portfolio-section">
+                    <i class="fa fa-suitcase fa-lg"></i>
+                    <span class="nav-text">Portfolio</span>
+                </a>
+            </li>
+            <li>
+                <a href="#contacts-section">
+                    <i class="fa fa-location-arrow fa-lg"></i>
+                    <span class="nav-text">Contacts</span>
+                </a>
+            </li>
+            <li>
+                <a href="#feedbacks-section">
+                    <i class="fa fa-comment-o fa-lg"></i>
+                    <span class="nav-text">Feedbacks</span>
+                </a>
+            </li>
+        </ul>
+        <footer>
+            <a class="go-back-btn" href="index.html">
+                <i class="fa fa-chevron-left"></i>
+                <span class="nav-text">Go back</span>
+            </a>
+        </footer>
+    </nav>
+</div>
+
+    <script src="./js/jquery-3.1.0.min.js"></script>
+    <script src="./js/isotope.pkgd.min.js"></script>
+    <script src="./js/firebase.js"></script>
+    <script src="./js/inner.js"></script>
+</body>
+</html>
